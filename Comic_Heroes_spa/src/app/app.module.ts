@@ -18,6 +18,8 @@ import { HomeComponent } from './components/home/home.component';
 import { HeroesComponent } from './components/heroes/heroes.component';
 import { AboutComponent } from './components/about/about.component';
 import { HeroeComponent } from './components/heroe/heroe.component';
+import { SearchNavBarComponent } from './components/shared/search-nav-bar/search-nav-bar.component';
+import { HeroeTargetComponent } from './components/heroe-target/heroe-target.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { HeroeComponent } from './components/heroe/heroe.component';
     HomeComponent,
     HeroesComponent,
     AboutComponent,
-    HeroeComponent
+    HeroeComponent,
+    SearchNavBarComponent,
+    HeroeTargetComponent
   ],
   imports: [
     BrowserModule,
