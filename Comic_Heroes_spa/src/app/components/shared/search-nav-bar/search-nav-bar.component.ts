@@ -10,12 +10,14 @@ import { HeroesService } from '../../../services/heroes.service';
 export class SearchNavBarComponent implements OnInit {
 
   heroes:any;
+  termino:string;
 
   constructor( private _heroesService:HeroesService,
                private activatedRoute:ActivatedRoute,
                private router:Router) {
     this.activatedRoute.params.subscribe( params => {
       this.heroes = this._heroesService.buscarHeroes( params['termino'] );
+      this.termino = params['termino'];
    })
   }
 
